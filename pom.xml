@@ -78,6 +78,7 @@
         </repository>
     </distributionManagement>
     <!-- Repository management, including extra repositories if needed -->
+    <!-- 
     <repositories>
         <repository>
             <id>ibiblio</id>
@@ -137,7 +138,8 @@
             </snapshots>
         </repository>
     </repositories>
-
+ -->
+ 
     <issueManagement>
         <system>Trac</system>
         <url>https://betterform.de/trac</url>

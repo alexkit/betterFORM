@@ -48,6 +48,10 @@
                     <artifactId>jmxri</artifactId>
                     <groupId>com.sun.jmx</groupId>
                 </exclusion>
+            <exclusion>
+                <groupId>javax.jms</groupId>
+                <artifactId>jms</artifactId>
+            </exclusion>                                        
             </exclusions>
 
         </dependency>

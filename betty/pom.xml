@@ -10,8 +10,8 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.betterform</groupId>
-    <artifactId xmlns="">betty</artifactId>
-    <version xmlns="">1.0</version>
+    <artifactId>betterform-betty</artifactId>
+    <version>4.1</version>
 
     <packaging>jar</packaging>
 
@@ -26,20 +26,27 @@
     and execute ant update-maven-poms
     -->
 
-    <dependencies xmlns="">
+    <dependencies>
       <dependency>
          <groupId>de.betterform</groupId>
          <artifactId>betterform-core</artifactId>
-         <version>5.0</version>
+         <version>4.1</version>
       </dependency>
-      <dependency>
+<!--       <dependency>
          <groupId>netscape</groupId>
          <artifactId>netscape</artifactId>
          <version>1.0</version>
          <scope>provided</scope>
       </dependency>
-      <dependency>
-         <groupId>net.sf.saxon</groupId>
+ -->
+ <dependency>
+    <groupId>net.sourceforge.htmlunit</groupId>
+    <artifactId>htmlunit</artifactId>
+    <version>2.10</version>
+</dependency> <!--  provides netscape.javascript.JSObject -->
+ 
+       <dependency>
+         <groupId>net.sourceforge.saxon</groupId>
          <artifactId>saxon</artifactId>
          <version>9.2.1.5</version>
       </dependency>
@@ -54,18 +61,18 @@
          <version>1.2.1</version>
       </dependency>
       <dependency>
-         <groupId>httpcomponents</groupId>
-         <artifactId>httpcomponents-core</artifactId>
+         <groupId>org.apache.httpcomponents</groupId>
+         <artifactId>httpcore</artifactId>
          <version>4.1</version>
       </dependency>
       <dependency>
-         <groupId>httpcomponents</groupId>
-         <artifactId>httpcomponents-client</artifactId>
+         <groupId>org.apache.httpcomponents</groupId>
+         <artifactId>httpclient</artifactId>
          <version>4.1.1</version>
       </dependency>
       <dependency>
-         <groupId>httpcomponents</groupId>
-         <artifactId>httpcomponents-mime</artifactId>
+         <groupId>org.apache.httpcomponents</groupId>
+         <artifactId>httpmime</artifactId>
          <version>4.1.1</version>
       </dependency>
       <dependency>
@@ -74,8 +81,8 @@
          <version>2.1</version>
       </dependency>
       <dependency>
-         <groupId>commons-lang</groupId>
-         <artifactId>commons-lang</artifactId>
+         <groupId>org.apache.commons</groupId>
+         <artifactId>commons-lang3</artifactId>
          <version>3.1</version>
       </dependency>
       <dependency>
@@ -106,12 +113,17 @@
                <artifactId>jmxri</artifactId>
                <groupId>com.sun.jmx</groupId>
             </exclusion>
+            <exclusion>
+                <groupId>javax.jms</groupId>
+                <artifactId>jms</artifactId>
+            </exclusion>                        
          </exclusions>
       </dependency>
       <dependency>
          <groupId>xerces</groupId>
          <artifactId>xercesImpl</artifactId>
-         <version>2.11.02</version>
+<!--          <version>2.11.02</version>
+ -->         <version>2.10.0</version>
       </dependency>
       <dependency>
          <groupId>xml-apis</groupId>

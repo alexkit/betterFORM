@@ -87,12 +87,14 @@
                 <pathelement location="${core.dir}/src/main/lib/commons-fileupload-1.2.1.jar"
                              groupid="commons-fileupload" version="1.2.1" artifactId="commons-fileupload"/>
                 <!-- <pathelement location="${core.dir}/src/main/lib/commons-httpclient-3.1.jar" groupid="commons-httpclient" version="3.1" artifactId="commons-httpclient"/> -->
-                <pathelement location="${core.dir}/src/main/lib/httpcore-4.1.jar" groupid="httpcomponents" version="4.1"
-                             artifactId="httpcomponents-core"/>
-                <pathelement location="${core.dir}/src/main/lib/httpclient-4.1.1.jar" groupid="httpcomponents"
-                             version="4.1.1" artifactId="httpcomponents-client"/>
-                <pathelement location="${core.dir}/src/main/lib/httpmime-4.1.1.jar" groupid="httpcomponents" version="4.1.1"
-                             artifactId="httpcomponents-mime"/>
+                
+                <pathelement location="${core.dir}/src/main/lib/httpcore-4.1.jar" groupid="org.apache.httpcomponents" version="4.1"
+                             artifactId="httpcore"/>
+                <pathelement location="${core.dir}/src/main/lib/httpclient-4.1.1.jar" groupid="org.apache.httpcomponents"
+                             version="4.1.1" artifactId="httpclient"/>
+                <pathelement location="${core.dir}/src/main/lib/httpmime-4.1.1.jar" groupid="org.apache.httpcomponents" version="4.1.1"
+                             artifactId="httpmime"/>
+                             
                 <pathelement location="${core.dir}/src/main/lib/commons-io-2.1.jar" groupid="commons-io" version="2.1"
                              artifactId="commons-io"/>
                 <pathelement location="${core.dir}/src/main/lib/commons-lang3-3.1.jar" groupid="commons-lang"
@@ -105,7 +107,8 @@
                              artifactId="mail"/>
                 <pathelement location="${core.dir}/src/main/lib/log4j-1.2.15.jar" groupid="log4j" version="1.2.15"
                              artifactId="log4j"/>
-                <pathelement location="${core.dir}/src/main/lib/xercesImpl-2.11.02.jar" groupid="xerces" version="2.11.02" artifactId="xercesImpl"/>
+<!--                 <pathelement location="${core.dir}/src/main/lib/xercesImpl-2.11.02.jar" groupid="xerces" version="2.11.02" artifactId="xercesImpl"/>
+ -->                <pathelement location="${core.dir}/src/main/lib/xercesImpl-2.10.0.jar" groupid="xerces" version="2.10.0" artifactId="xercesImpl"/>
                 <pathelement location="${core.dir}/src/main/lib/xml-apis-1.4.01.jar" groupid="xml-apis" artifactId="xml-apis" version="1.4.01"/>
                 <pathelement location="${core.dir}/src/main/lib/xmlrpc-common-3.1.2.jar" groupid="org.apache.xmlrpc" version="3.1.2" artifactId="xmlrpc-common"/>
                 <pathelement location="${core.dir}/src/main/lib/xmlrpc-client-3.1.2.jar" groupid="org.apache.xmlrpc" version="3.1.2" artifactId="xmlrpc-client"/>
