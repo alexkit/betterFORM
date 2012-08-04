@@ -13,10 +13,8 @@ version.info
 *.ipr
 *.iws
 .idea
+
 ## eclipse project files
-.classpath
-.project
-.settings
 
 
 ## directories to ignore

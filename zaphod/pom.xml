@@ -17,9 +17,7 @@
 
     <!-- TODO: generate dependencies for zaphod/pom.xml -->
 
-    <groupId>de.betterform</groupId>
-    <artifactId>zaphod</artifactId>
-    <version>1.0</version>
+    <artifactId>betterform-zaphod</artifactId>
     <name>betterFORM zaphod</name>
 
     <packaging>war</packaging>
