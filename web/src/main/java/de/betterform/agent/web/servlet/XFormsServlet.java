@@ -8,6 +8,7 @@ package de.betterform.agent.web.servlet;
 import de.betterform.agent.web.WebFactory;
 import de.betterform.agent.web.WebProcessor;
 import de.betterform.agent.web.WebUtil;
+import de.betterform.agent.web.filter.XFormsFilter;
 import de.betterform.xml.config.XFormsConfigException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -115,6 +116,13 @@ public class XFormsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
+    	
+		if ("GET".equalsIgnoreCase(request.getMethod())
+				&& request.getParameter("submissionResponse") != null) {
+
+			XFormsFilter.doSubmissionReplaceAll(request, response);
+			return;
+		}
 
         request.setCharacterEncoding("UTF-8");
         WebUtil.nonCachingResponse(response);
