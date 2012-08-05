@@ -262,7 +262,7 @@
         <servlet-class>de.betterform.agent.web.servlet.UploadServlet</servlet-class>
     </servlet>
 
-<!--
+
     <servlet>
         <servlet-name>XFormsServlet</servlet-name>
         <servlet-class>de.betterform.agent.web.servlet.XFormsRepeater</servlet-class>
@@ -271,7 +271,6 @@
             <param-value>dojo</param-value>
         </init-param>
     </servlet>
--->
 	<servlet-mapping>
         <servlet-name>Flux</servlet-name>
         <url-pattern>/Flux/*</url-pattern>
@@ -316,12 +315,10 @@
         <servlet-name>ViewServlet</servlet-name>
         <url-pattern>/view</url-pattern>
     </servlet-mapping>
-<!--
     <servlet-mapping>
         <servlet-name>XFormsServlet</servlet-name>
         <url-pattern>/repeater/*</url-pattern>
     </servlet-mapping>
--->
     <welcome-file-list>
         <welcome-file>dashboard.html</welcome-file>
     </welcome-file-list>
