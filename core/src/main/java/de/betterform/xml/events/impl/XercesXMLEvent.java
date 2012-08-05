@@ -6,7 +6,7 @@
 package de.betterform.xml.events.impl;
 
 import de.betterform.xml.events.XMLEvent;
-import org.apache.xerces.dom.events.EventImpl;
+import com.sun.org.apache.xerces.internal.dom.events.EventImpl;
 
 import java.util.Collection;
 import java.util.HashMap;
