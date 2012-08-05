@@ -108,7 +108,7 @@
                 <pathelement location="${core.dir}/src/main/lib/log4j-1.2.15.jar" groupid="log4j" version="1.2.15"
                              artifactId="log4j"/>
 <!--                 <pathelement location="${core.dir}/src/main/lib/xercesImpl-2.11.02.jar" groupid="xerces" version="2.11.02" artifactId="xercesImpl"/>
- -->                <pathelement location="${core.dir}/src/main/lib/xercesImpl-2.10.0.jar" groupid="xerces" version="2.10.0" artifactId="xercesImpl"/>
+ -->                <pathelement location="${core.dir}/src/main/lib/xercesImpl-2.11.02.jar" groupid="xerces" version="2.10.0" artifactId="xercesImpl"/>
                 <pathelement location="${core.dir}/src/main/lib/xml-apis-1.4.01.jar" groupid="xml-apis" artifactId="xml-apis" version="1.4.01"/>
                 <pathelement location="${core.dir}/src/main/lib/xmlrpc-common-3.1.2.jar" groupid="org.apache.xmlrpc" version="3.1.2" artifactId="xmlrpc-common"/>
                 <pathelement location="${core.dir}/src/main/lib/xmlrpc-client-3.1.2.jar" groupid="org.apache.xmlrpc" version="3.1.2" artifactId="xmlrpc-client"/>
